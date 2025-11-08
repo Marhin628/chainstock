@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.XYChart?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" prefHeight="400.0" prefWidth="600.0">
+    <LineChart fx:id="lineChart" prefHeight="400.0" prefWidth="600.0">
+        <xAxis>
+            <NumberAxis fx:id="xAxis" label="Time"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="yAxis" label="Value"/>
+        </yAxis>
+        <data>
+            <XYChart.Series fx:id="dataSeries" name="Asset Value"/>
+        </data>
+    </LineChart>
+</AnchorPane>

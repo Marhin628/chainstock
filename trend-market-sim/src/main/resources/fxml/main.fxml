@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.XYChart?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" prefHeight="600.0" prefWidth="800.0">
+    <VBox spacing="10.0" alignment="CENTER">
+        <Label text="Welcome to Trend Market Simulator" />
+        <TextField fx:id="searchField" promptText="Search for assets..." />
+        <Button fx:id="searchButton" text="Search" />
+        <LineChart fx:id="lineChart" prefHeight="400.0" prefWidth="600.0">
+            <xAxis>
+                <NumberAxis fx:id="xAxis" label="Time" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis" label="Value" />
+            </yAxis>
+        </LineChart>
+    </VBox>
+</AnchorPane>
