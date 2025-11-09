@@ -11,7 +11,7 @@ public class TrendFetcher {
 
     public void analyzeTrends(List<String> trends) {
         // Logic to analyze trends and update asset values accordingly
-        for (String trend : trends) {
+        for (String trends : trends) {
             // Analyze each trend and update the corresponding asset value
         }
     }
